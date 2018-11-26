@@ -5,7 +5,7 @@ import Login from "./app/components/Login";
 export default class App extends React.Component {
   render() {
     return (
-      <Text>App</Text>
+      <Login/>
     );
   }
 }
