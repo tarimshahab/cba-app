@@ -57,7 +57,7 @@ export default class Bill extends React.Component {
               <Text style={styles.fieldLabel}>Payee Name</Text>
               <TextInput
                 value={this.state.payeeName}
-                style={styles.textInput}
+                style={styles.fieldValue}
                 onChangeText={payeeName => this.setState({ payeeName })}
               />
             </View>
@@ -66,7 +66,7 @@ export default class Bill extends React.Component {
               <TextInput
                 value={this.state.payeeAccountNum}
                 keyboardType={"numeric"}
-                style={styles.textInput}
+                style={styles.fieldValue}
                 onChangeText={payeeAccountNum =>
                   this.setState({ payeeAccountNum })
                 }
@@ -151,7 +151,7 @@ export default class Bill extends React.Component {
           <TextInput
             value={this.state.amountText}
             keyboardType={"decimal-pad"}
-            style={styles.textInput}
+            style={styles.fieldValue}
             onChangeText={amountText => {
               let amount = +Number(
                 amountText.replace(/[^0-9.-]+/g, "")
@@ -200,7 +200,7 @@ export default class Bill extends React.Component {
               <Text style={styles.fieldLabel}>Start Date</Text>
               <TextInput
                 value={this.state.startDate}
-                style={styles.textInput}
+                style={styles.fieldValue}
                 onChangeText={startDate => this.setState({ startDate })}
               />
             </View>
@@ -221,7 +221,7 @@ const styles = StyleSheet.create({
     backgroundColor: "#fff",
     margin: 20
   },
-  textInput: {
+  fieldValue: {
     backgroundColor: "#f1f1f1",
     fontSize: 18,
     padding: 5,

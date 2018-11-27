@@ -3,6 +3,7 @@ import { createDrawerNavigator, createStackNavigator } from "react-navigation";
 import AccountList from "../components/AccountList";
 import Login from "../components/Login";
 import Bill from "../components/Bill";
+import UserProfile from "../components/UserProfile";
 
 const DrawerNav = createDrawerNavigator(
   {
@@ -14,10 +15,13 @@ const DrawerNav = createDrawerNavigator(
     },
     Bills: {
       screen: Bill
+    },
+    'User Info': {
+      screen: UserProfile
     }
   },
   {
-    initialRouteName: "Bills"
+    initialRouteName: "User Info"
   }
 );
 

@@ -53,9 +53,39 @@ const frequencies = [
     value: 30
   }
 ];
+
+const bankBranches = [
+  {
+    address: "111 Bank Street",
+    phone: "(613)-111-1111",
+    manager: "Bill Blington"
+  },
+  {
+    address: "222 Bling Ave",
+    phone: "(613)-222-2222",
+    manager: "Ceri Blington"
+  },
+  {
+    address: "333 Chaching Road",
+    phone: "(613)-333-3333",
+    manager: "Gary Blington"
+  },
+  {
+    address: "444 Richie Rich Ave",
+    phone: "(613)-444-4444",
+    manager: "Samantha Blington"
+  },
+  {
+    address: "555 Loaded Boulevard",
+    phone: "(613)-555-5555",
+    manager: "Rory Blington"
+  }
+];
+
 export default {
   debitAccounts,
   creditAccounts,
   payees,
-  frequencies
+  frequencies,
+  bankBranches
 };
