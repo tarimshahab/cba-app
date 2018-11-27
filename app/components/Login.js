@@ -1,5 +1,11 @@
 import React from "react";
-import { StyleSheet, Text, View, TextInput, TouchableOpacity } from "react-native";
+import {
+  StyleSheet,
+  Text,
+  View,
+  TextInput,
+  TouchableOpacity
+} from "react-native";
 
 export default class Login extends React.Component {
   state = {
@@ -10,9 +16,7 @@ export default class Login extends React.Component {
   render() {
     return (
       <View style={styles.container}>
-        <Text style={styles.headerText}>
-          CBA Mobile App
-        </Text>
+        <Text style={styles.headerText}>CBA Mobile App</Text>
         <TextInput
           style={styles.input}
           placeholder={"Card Number"}
@@ -29,6 +33,7 @@ export default class Login extends React.Component {
         />
         <TouchableOpacity
           style={styles.loginButton}
+          onPress={() => this.props.navigation.navigate("Account List")}
         >
           <Text style={styles.loginText}>Login</Text>
         </TouchableOpacity>
@@ -56,7 +61,7 @@ const styles = StyleSheet.create({
   },
   headerText: {
     fontSize: 50,
-    marginBottom: 20,
+    marginBottom: 20
   },
   loginButton: {
     marginTop: 15,
@@ -66,10 +71,10 @@ const styles = StyleSheet.create({
     backgroundColor: "#4f65cb",
     width: "100%",
     alignItems: "center",
-    justifyContent: "center",
+    justifyContent: "center"
   },
   loginText: {
     color: "white",
-    fontSize: 20,
+    fontSize: 20
   }
 });
