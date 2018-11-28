@@ -51,6 +51,7 @@ export default class AccountList extends React.Component {
   render() {
     return (
       <SectionList
+        style={{marginTop: 24}}
         contentContainerStyle={styles.container}
         renderItem={this.renderItem}
         renderSectionHeader={this.renderSectionHeader}
